@@ -36,7 +36,7 @@ class LoanApplicationService {
 		HttpHeaders httpHeaders = new HttpHeaders()
 		httpHeaders.add(HttpHeaders.CONTENT_TYPE, FRAUD_SERVICE_JSON_VERSION_1)
 		ResponseEntity<FraudServiceResponse> response =
-				restTemplate.exchange("http://localhost:8080/fraudcheck", HttpMethod.PUT,
+				restTemplate.exchange('http://localhost:8080/fraudcheck', HttpMethod.PUT,
 						new HttpEntity<>(request, httpHeaders),
 						FraudServiceResponse.class)
 		return response.body
