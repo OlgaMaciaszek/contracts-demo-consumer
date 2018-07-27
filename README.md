@@ -1,0 +1,1 @@
+Demo Spring Cloud Contract app - consumer side.
